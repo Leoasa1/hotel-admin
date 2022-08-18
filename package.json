@@ -1,6 +1,8 @@
 {
 	"name": "hotel-admin",
-	"version": "1.0.0",
+	"engines": {
+		"node": "18.x"
+	},
 	"license": "MIT",
 	"scripts": {
 		"dev": "next dev",

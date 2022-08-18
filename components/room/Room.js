@@ -3,7 +3,6 @@ import React from 'react';
 export default function roomInfo({ room }) {
 	return (
 		<tr>
-			<td>{room._id}</td>
 			<td>
 				{room.room_type} - {room.bed} bed
 			</td>

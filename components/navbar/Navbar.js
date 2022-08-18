@@ -1,6 +1,9 @@
-import React from 'react';
+import { React, useContext } from 'react';
+import AuthContext from '../../context/AuthContext';
 
 const Navbar = () => {
+	const { user, logout } = useContext(AuthContext);
+
 	return (
 		<div className='navbar sticky top-0 z-20 bg-neutral text-white flex flex-row lg:flex-row-reverse justify-between'>
 			<label
@@ -11,20 +14,17 @@ const Navbar = () => {
 			</label>
 			<div className='px-5'>
 				<div className='dropdown dropdown-end'>
-					<label
-						tabIndex='0'
-						className='btn btn-ghost btn-circle avatar'
-					>
-						<div className='w-10 rounded-full border-2'>
-							<div className='px-2 pt-3'>JD</div>
+					<label tabIndex='0' className=''>
+						<div className='btn btn-info px-4 py-1'>
+							{user ? `${user.first_name}` : ''}
 						</div>
 					</label>
 					<ul
 						tabIndex='0'
-						className='mt-3 p-2 shadow menu menu-compact dropdown-content bg-info rounded-box w-52 text-base-content'
+						className='mt-3 p-2 shadow menu menu-compact dropdown-content bg-neutral rounded-box w-52 font-bold'
 					>
 						<li>
-							<a>Logout</a>
+							<button onClick={() => logout()}>Logout</button>
 						</li>
 					</ul>
 				</div>

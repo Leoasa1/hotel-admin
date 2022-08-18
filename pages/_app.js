@@ -1,11 +1,12 @@
 import '../styles/globals.css';
-import { Layout } from '../components/layout/Layout';
+import 'react-toastify/dist/ReactToastify.css';
+import { AuthProvider } from '../context/AuthContext';
 
 function MyApp({ Component, pageProps }) {
 	return (
-		<Layout>
+		<AuthProvider>
 			<Component {...pageProps} />
-		</Layout>
+		</AuthProvider>
 	);
 }
 

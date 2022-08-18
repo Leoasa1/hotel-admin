@@ -5,6 +5,7 @@ export default async (req, res) => {
 	if (req.method === 'POST') {
 		const { email, password } = req.body;
 
+		console.log(API_URL);
 		const expressRes = await fetch(`${API_URL}/auth`, {
 			method: 'POST',
 			headers: {
@@ -17,7 +18,6 @@ export default async (req, res) => {
 		});
 
 		const data = await expressRes.json();
-		console.log(data);
 
 		if (expressRes.ok) {
 			// Set Cookie

@@ -1,8 +1,10 @@
 {
 	"name": "hotel-admin",
-	"engines": {
-		"node": "18.x"
-	},
+  	"description": "Hotel Admin App",
+  	"version": "1.0.0",
+  	"engines": {
+    		"yarn": "1.x"
+  	},
 	"license": "MIT",
 	"scripts": {
 		"dev": "next dev",

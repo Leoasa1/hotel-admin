@@ -17,7 +17,7 @@ export default async (req, res) => {
 		});
 
 		const data = await expressRes.json();
-		console.log(data);
+		console.log(API_URL);
 
 		if (expressRes.ok) {
 			// Set Cookie

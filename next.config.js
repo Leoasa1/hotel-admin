@@ -3,7 +3,7 @@ module.exports = {
 		return [
 			{
 				source: '/api/:path*',
-				destination: 'https://hotel-admin-ten.vercel.app/:path*',
+				destination: 'https://hotel-admin-leoasa1.vercel.app//:path*',
 			},
 		];
 	},

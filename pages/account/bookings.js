@@ -26,6 +26,7 @@ export default function Reservations({ bookings }) {
 							<thead>
 								<tr>
 									<th>Room ID</th>
+									<th>Room Type</th>
 									<th>Guests ID</th>
 									<th>Check In</th>
 									<th>Check Out</th>

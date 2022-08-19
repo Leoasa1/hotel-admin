@@ -1,8 +1,11 @@
 import React from 'react';
 
 export default function Guests({ booking }) {
+	const roomID = booking.room._id;
+
 	return (
 		<tr>
+			<td>{roomID.slice(-4)}</td>
 			<td>
 				{booking.room.room_type} {booking.room.bed}
 			</td>
